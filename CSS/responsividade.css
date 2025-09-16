@@ -1,0 +1,100 @@
+/* =============================
+   Responsividade + Menu Hambúrguer (apenas mobile)
+   ============================= */
+
+/* Esconde o botão hambúrguer no desktop */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Checkbox escondido */
+#menu-toggle { display: none; }
+
+/* Versão Mobile */
+@media (max-width: 960px) {
+  body { flex-direction: column; }
+
+  /* Aside vira barra superior */
+  aside {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    z-index: 1000;
+  }
+
+  aside img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  aside h2 { margin: 0; font-size: 16px; }
+
+  /* Esconde o nav inicialmente */
+  aside nav {
+    display: none;
+    flex-direction: column;
+    background: #1e40af;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  aside nav a {
+    margin: 5px 0;
+    background: none;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: left;
+  }
+
+  /* Mostra nav quando toggle ativado */
+  #menu-toggle:checked + .hamburger + nav {
+    display: flex;
+  }
+
+  /* Mostra botão hambúrguer */
+  .hamburger { display: flex; }
+
+  /* Animação do hambúrguer para X */
+  #menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Ajusta main sem aside fixo */
+  main { margin-left: 0; margin-top: 70px; }
+
+  /* Ajustes em seções */
+  .courses { flex-direction: column; padding: 20px; }
+  .about { flex-direction: column; height: auto; margin-top: 50px; }
+  .testimonials { height: auto; padding: 60px 20px; }
+  .footer-container { flex-direction: column; align-items: flex-start; }
+}
