@@ -66,11 +66,14 @@ aside nav a {
 }
 
 
-
-
 aside nav a:hover {
     background-color: #498af3;
     transform: translateX(5px);
+}
+
+
+aside nav a i {
+    margin-right: 5px;
 }
 
 /* Fim Navbar lateral */
