@@ -21,7 +21,7 @@ body {
    NAVBAR LATERAL
 ===================================================== */
 aside {
-    width: 280px;
+    width: 240px;
     background-color: #1e40af;
     color: #ffffff;
     padding: 30px 20px;
@@ -81,7 +81,7 @@ aside nav a i {
    CONTEÚDO PRINCIPAL
 ===================================================== */
 main {
-    margin-left: 280px; /* respeita largura do aside */
+    margin-left: 240px; /* respeita largura do aside */
     flex: 1;
 }
 
@@ -264,8 +264,7 @@ main {
     padding: 36px;
     margin-top: 40px;
     height: 85vh;
-
-    background-color: #e9e9e9;
+    background-color: #f3f4f6;
 }
 
 .about-image img {
@@ -298,8 +297,7 @@ main {
    DEPOIMENTOS
 ===================================================== */
 .testimonials {
-    padding: 100px 40px;
-    background: #f3f4f6;
+    padding: 90px 40px;
     text-align: center;
 }
 
@@ -345,7 +343,7 @@ main {
 ===================================================== */
 .denuncias-section {
   max-width: 800px;
-  margin: 190px auto;
+  margin: 90px auto;
   background: #ffffff;
   padding: 30px;
   border-radius: 16px;
