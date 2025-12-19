@@ -24,3 +24,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+// Swiper
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  speed: 800, // velocidade da transição
+
+  autoplay: {
+    delay: 3500, // tempo entre os slides (ms)
+    disableOnInteraction: false, // continua mesmo após clique
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
