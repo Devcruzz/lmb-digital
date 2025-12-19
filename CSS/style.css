@@ -198,60 +198,102 @@ main {
 /* =====================================================
    CURSOS
 ===================================================== */
-#courses {
-    margin: 8rem 0;
-    padding: 4rem 0;
+
+
+/* =====================================================
+   CURSOS - TIMELINE
+===================================================== */
+
+.courses-timeline {
+  padding: 6rem 2rem;
+  background: #f9fafb;
 }
 
-#courses h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 2rem;
+.courses-timeline h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 4rem;
+  color: #1e40af;
 }
 
-.courses {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 0 30px;
-    justify-content: center;
+/* Linha central */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.course-card {
-    flex: 1 1 280px;
-    max-width: 350px;
-    min-height: 220px;
-    padding: 25px;
-
-    background: #f3f4f6;
-    border: 3px solid #1e40af;
-    border-radius: 14px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #acbfff;
+  transform: translateX(-50%);
 }
 
-.course-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(30, 64, 175, 0.4);
+/* Item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-.course-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #000;
+.timeline-item.left {
+  left: 0;
+  text-align: right;
 }
 
-.course-card p {
-    font-size: 15px;
-    color: #374151;
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
 }
 
+/* Conteúdo */
+.timeline-item .content {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item .content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e40af;
+}
+
+.timeline-item p {
+  font-size: 15px;
+  color: #374151;
+}
+
+/* Ponto */
+.timeline-item .dot {
+  position: absolute;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  background: #1e40af;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-item.left .dot {
+  right: -9px;
+}
+
+.timeline-item.right .dot {
+  left: -9px;
+}
 
 /* =====================================================
    SOBRE
