@@ -1,300 +1,346 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <!-- ================= META TAGS ================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/responsividade.css">
+    <!-- ================= CSS ================= -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsividade.css" />
+
+    <!-- ================= SWIPER ================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- ================= ICONES ================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- ================= JS ================= -->
     <script src="js/main.js" defer></script>
-    <!-- Icones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <title>LMB</title>
-</head>
+  </head>
 
-<body>
-
-    <!-- Navbar lateral -->
+  <body>
+    <!-- ================================================= -->
+    <!-- =============== NAVBAR LATERAL ================= -->
+    <!-- ================================================= -->
     <aside>
-        <a href="#hero" class="link-hero"><img src="Assets/logo-lmb.jpg" alt="Logo leonel"></a>
-        <h2>LMB</h2>
-        <!-- Hambúrguer visível apenas no mobile -->
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav>
-            <a href="#cursos"><i class="fas fa-book-open"></i> Cursos</a>
-            <a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
-            <a href="#depoimentos"><i class="fas fa-comment-dots"></i> Depoimentos</a>
-            <a href="#denuncias"><i class="fas fa-exclamation-triangle"></i> Denúncias</a>
-            <a href="#informacoes"><i class="fas fa-question-circle"></i> Informações</a>
+      <!-- Logo -->
+      <a href="#hero" class="link-hero">
+        <img src="Assets/logo-lmb.jpg" alt="Logo Leonel" />
+      </a>
 
+      <h2>LMB</h2>
 
-            <!-- <a href="#contact">Matrícula WhatsApp</a> -->
-        </nav>
+      <!-- Menu hamburguer (mobile) -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navegação -->
+      <nav>
+        <a href="#courses"><i class="fas fa-book-open"></i> Cursos</a>
+        <a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+        <a href="#depoimentos"
+          ><i class="fas fa-comment-dots"></i> Depoimentos</a
+        >
+        <a href="#denuncias"
+          ><i class="fas fa-exclamation-triangle"></i> Denúncias</a
+        >
+        <a href="#informacoes"
+          ><i class="fas fa-question-circle"></i> Informações</a
+        >
+      </nav>
     </aside>
-    <!-- Fim Navbar lateral -->
 
+    <!-- ================================================= -->
+    <!-- ================== CONTEÚDO ==================== -->
+    <!-- ================================================= -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-content">
-                <h1>EEEP Leonel de Moura Brizola</h1>
-                <p>Formando profissionais preparados para os desafios do futuro.</p>
-                <a href="#courses" class="btn">Conheça nossos cursos</a>
+      <!-- ============================================= -->
+      <!-- ================= HERO ====================== -->
+      <!-- ============================================= -->
+      <section class="hero" id="hero">
+        <!-- Swiper de fundo -->
+        <div class="hero-swiper">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <img
+                  src="Assets/Captura de tela 2025-12-18 152934.png"
+                  alt=""
+                />
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <img
+                  src="Assets/Captura de tela 2025-12-18 152958.png"
+                  alt=""
+                />
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <img
+                  src="Assets/Captura de tela 2025-12-18 153048.png"
+                  alt=""
+                />
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <img
+                  src="Assets/Captura de tela 2025-12-18 153214.png"
+                  alt=""
+                />
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <img
+                  src="Assets/Captura de tela 2025-12-18 153236.png"
+                  alt=""
+                />
+              </div>
             </div>
-        </section>
-        <!-- Fim Hero Section -->
 
-        <!-- Cursos -->
-        <section id="courses">
-            <h1>Cursos Oferecidos</h1>
-            <div class="courses">
-                <div class="course-card">
-                    <img src="https://blog.even3.com.br/wp-content/uploads/2022/07/33-imagens-de-destaque_guestpost-cursos-superiores.png"
-                        alt="Curso Redes de computadores">
-                    <div>
-                        <h3>Redes de computadores</h3>
-                        <p>Aprenda programação, redes e desenvolvimento web com profissionais qualificados.</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <img src="https://blog.even3.com.br/wp-content/uploads/2022/07/33-imagens-de-destaque_guestpost-cursos-superiores.png"
-                        alt="Curso Administração">
-                    <div>
-                        <h3>Administração</h3>
-                        <p>Formação voltada para gestão, finanças e empreendedorismo.</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <img src="https://blog.even3.com.br/wp-content/uploads/2022/07/33-imagens-de-destaque_guestpost-cursos-superiores.png"
-                        alt="Curso Eletrônica">
-                    <div>
-                        <h3>Nutrição </h3>
-                        <p>Desenvolva habilidades em circuitos, automação e manutenção eletrônica.</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <img src="https://blog.even3.com.br/wp-content/uploads/2022/07/33-imagens-de-destaque_guestpost-cursos-superiores.png"
-                        alt="Curso Informática">
-                    <div>
-                        <h3>Multimídia</h3>
-                        <p>Aprenda programação, redes e desenvolvimento web com profissionais qualificados.</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <img src="https://blog.even3.com.br/wp-content/uploads/2022/07/33-imagens-de-destaque_guestpost-cursos-superiores.png"
-                        alt="Curso Administração">
-                    <div>
-                        <h3>Manuntenção automotiva</h3>
-                        <p>Formação voltada para gestão, finanças e empreendedorismo.</p>
-                    </div>
-                </div>
+            <!-- Paginação do Swiper -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
 
+        <!-- Conteúdo do Hero -->
+        <div class="hero-content">
+          <h1>EEEP Leonel de Moura Brizola</h1>
+          <p>Formando profissionais preparados para os desafios do futuro.</p>
+          <a href="#courses" class="btn">Ver destaques</a>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- ================= CURSOS ==================== -->
+      <!-- ============================================= -->
+      <section id="courses">
+        <h1>Cursos Oferecidos</h1>
+
+        <div class="courses">
+          <div class="course-card">
+            <h3>Redes de Computadores</h3>
+            <p>Aprenda redes, programação e infraestrutura de TI.</p>
+          </div>
+
+          <div class="course-card">
+            <h3>Administração</h3>
+            <p>Gestão, finanças e empreendedorismo.</p>
+          </div>
+
+          <div class="course-card">
+            <h3>Nutrição</h3>
+            <p>Alimentação saudável e qualidade de vida.</p>
+          </div>
+
+          <div class="course-card">
+            <h3>Multimídia</h3>
+            <p>Design, vídeo e edição de conteúdo.</p>
+          </div>
+
+          <div class="course-card">
+            <h3>Manutenção Automotiva</h3>
+            <p>Manutenção e tecnologia automotiva moderna.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- ================= SOBRE ===================== -->
+      <!-- ============================================= -->
+      <section id="sobre" class="about">
+        <div class="about-image">
+          <img src="Assets/img-school.png" alt="Fachada da escola" />
+        </div>
+
+        <div class="about-text">
+          <h2>Sobre a Escola</h2>
+          <p>
+            A <strong>EEEP Leonel de Moura Brizola</strong> é referência em
+            ensino profissionalizante.
+          </p>
+          <p>
+            Unimos teoria e prática com professores qualificados e estrutura
+            moderna.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- ============== DEPOIMENTOS ================== -->
+      <!-- ============================================= -->
+      <section id="depoimentos" class="testimonials">
+        <h2>Depoimentos dos Alunos</h2>
+
+        <div class="testimonials-container">
+          <!-- Depoimento 1 -->
+          <div class="testimonial-card">
+            <p>"Graças ao curso técnico, consegui estágio ainda no 2º ano."</p>
+            <div class="author">
+              <h3>João Silva</h3>
+              <span>Ex-aluno</span>
             </div>
-        </section>
-        <!-- Fim Cursos -->
+          </div>
 
-        <!-- sobre -->
-        <section id="sobre" class="about">
-            <div class="about-image">
-                <img src="Assets/img-school.png" alt="Fachada da escola">
-            </div>
-            <div class="about-text">
-                <h2>Sobre a Escola</h2>
-                <p>
-                    A <strong>EEEP Leonel de Moura Brizola</strong> é referência em ensino profissionalizante,
-                    oferecendo cursos técnicos de qualidade e preparando os alunos para o mercado de trabalho.
-                </p>
-                <p>
-                    Nosso compromisso é unir formação acadêmica e prática, com professores qualificados e
-                    estrutura moderna para o desenvolvimento dos estudantes.
-                </p>
-            </div>
-        </section>
-        <!-- Fim sobre  -->
-
-        <!-- Depoimentos -->
-        <section id="depoimentos" class="testimonials">
-            <h2>Depoimentos dos Alunos</h2>
-            <div class="testimonials-container">
-
-                <div class="testimonial-card">
-                    <p>
-                        "A EEEP Leonel de Moura Brizola mudou minha vida! Graças ao curso técnico,
-                        consegui estágio ainda no 2º ano e hoje já atuo na área que sempre sonhei."
-                    </p>
-                    <div class="author">
-                        <img src="https://via.placeholder.com/80" alt="Foto do aluno João">
-                        <div>
-                            <h3>João Silva</h3>
-                            <span>Ex-aluno de Informática</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>
-                        "A estrutura e os professores são excelentes. O aprendizado vai muito além
-                        da sala de aula, com projetos que nos preparam para o mercado."
-                    </p>
-                    <div class="author">
-                        <img src="https://via.placeholder.com/80" alt="Foto da aluna Maria">
-                        <div>
-                            <h3>Maria Oliveira</h3>
-                            <span>Ex-aluna de Enfermagem</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>
-                        "Aqui descobri minha paixão por Administração. Hoje estou na faculdade,
-                        mas com a base sólida que construí na escola."
-                    </p>
-                    <div class="author">
-                        <img src="https://via.placeholder.com/80" alt="Foto do aluno Pedro">
-                        <div>
-                            <h3>Pedro Santos</h3>
-                            <span>Ex-aluno de Administração</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p>
-                        "A EEEP Leonel de Moura Brizola mudou minha vida! Graças ao curso técnico,
-                        consegui estágio ainda no 2º ano e hoje já atuo na área que sempre sonhei."
-                    </p>
-                    <div class="author">
-                        <img src="https://via.placeholder.com/80" alt="Foto do aluno João">
-                        <div>
-                            <h3>João Silva</h3>
-                            <span>Ex-aluno de Informática</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>
-                        "A estrutura e os professores são excelentes. O aprendizado vai muito além
-                        da sala de aula, com projetos que nos preparam para o mercado."
-                    </p>
-                    <div class="author">
-                        <img src="https://via.placeholder.com/80" alt="Foto da aluna Maria">
-                        <div>
-                            <h3>Maria Oliveira</h3>
-                            <span>Ex-aluna de Enfermagem</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>
-                        "Aqui descobri minha paixão por Administração. Hoje estou na faculdade,
-                        mas com a base sólida que construí na escola."
-                    </p>
-                    <div class="author">
-                        <img src="https://via.placeholder.com/80" alt="Foto do aluno Pedro">
-                        <div>
-                            <h3>Pedro Santos</h3>
-                            <span>Ex-aluno de Administração</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- Fim Depoimentos -->
-
-        <!-- Denúncias -->
-        <section id="denuncias" class="denuncias-section">
-            <h1>Denúncias</h1>
-            <p class="subtitle">
-                Utilize este formulário para registrar uma denúncia de forma segura e confidencial.
+          <!-- Depoimento 2 -->
+          <div class="testimonial-card">
+            <p>
+              "A estrutura e os professores são excelentes. O aprendizado vai
+              muito além da sala de aula, com projetos que nos preparam para o
+              mercado."
             </p>
+            <div class="author">
+              <h3>Maria Oliveira</h3>
+              <span>Ex-aluna de Enfermagem</span>
+            </div>
+          </div>
 
-            <form class="denuncias-form">
-                <div class="form-group">
-                    <label for="nome">Nome (opcional)</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome (se desejar)">
-                </div>
+          <!-- Depoimento 3 -->
+          <div class="testimonial-card">
+            <p>
+              "Aqui descobri minha paixão por Administração. Hoje estou na
+              faculdade, mas com a base sólida que construí na escola."
+            </p>
+            <div class="author">
+              <h3>Pedro Santos</h3>
+              <span>Ex-aluno de Administração</span>
+            </div>
+          </div>
 
-                <div class="form-group">
-                    <label for="email">E-mail (opcional)</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-                </div>
+          <!-- Depoimento 4 -->
+          <div class="testimonial-card">
+            <p>
+              "A EEEP Leonel de Moura Brizola mudou minha vida! Graças ao curso
+              técnico, consegui estágio ainda no 2º ano e hoje já atuo na área
+              que sempre sonhei."
+            </p>
+            <div class="author">
+              <h3>João Silva</h3>
+              <span>Ex-aluno de Informática</span>
+            </div>
+          </div>
 
-                <div class="form-group">
-                    <label for="tipo">Tipo de Denúncia</label>
-                    <select id="tipo" name="tipo">
-                        <option value="">Selecione...</option>
-                        <option value="assédio">Assédio</option>
-                        <option value="bullying">Bullying</option>
-                        <option value="infraestrutura">Problema de infraestrutura</option>
-                        <option value="outro">Outro</option>
-                    </select>
-                </div>
+          <!-- Depoimento 5 -->
+          <div class="testimonial-card">
+            <p>
+              "A estrutura e os professores são excelentes. O aprendizado vai
+              muito além da sala de aula, com projetos que nos preparam para o
+              mercado."
+            </p>
+            <div class="author">
+              <h3>Maria Oliveira</h3>
+              <span>Ex-aluna de Enfermagem</span>
+            </div>
+          </div>
 
-                <div class="form-group">
-                    <label for="descricao">Descrição</label>
-                    <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva a situação..."></textarea>
-                </div>
+          <!-- Depoimento 6 -->
+          <div class="testimonial-card">
+            <p>
+              "Aqui descobri minha paixão por Administração. Hoje estou na
+              faculdade, mas com a base sólida que construí na escola."
+            </p>
+            <div class="author">
+              <h3>Pedro Santos</h3>
+              <span>Ex-aluno de Administração</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <button type="submit" class="btn-enviar">Enviar Denúncia</button>
-            </form>
-        </section>
+      <!-- ============================================= -->
+      <!-- ================= DENÚNCIAS ================= -->
+      <!-- ============================================= -->
+      <section id="denuncias" class="denuncias-section">
+        <h1>Denúncias</h1>
+        <p class="subtitle">
+          Utilize este formulário para registrar uma denúncia de forma segura.
+        </p>
 
-        <!-- Rodapé -->
-        <section id="footer">
-            <footer class="footer">
-                <div class="footer-container">
+        <form class="denuncias-form">
+          <!-- Campo Nome -->
+          <div class="form-group">
+            <label for="nome">Nome (opcional)</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" />
+          </div>
 
-                    <!-- Sobre a escola -->
-                    <div class="footer-section">
-                        <h3>EEEP Leonel de Moura Brizola</h3>
-                        <p>
-                            Escola Estadual de Ensino Profissional dedicada à formação técnica
-                            e ao desenvolvimento humano, preparando os alunos para os desafios
-                            do mercado de trabalho e da vida.
-                        </p>
-                    </div>
+          <!-- Campo Email -->
+          <div class="form-group">
+            <label for="email">E-mail (opcional)</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" />
+          </div>
 
-                    <!-- Links úteis -->
-                    <div class="footer-section">
-                        <h3>Links Úteis</h3>
-                        <ul>
-                            <li><a href="#cursos">Cursos</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#depoimentos">Depoimentos</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ul>
-                    </div>
+          <!-- Tipo -->
+          <div class="form-group">
+            <label for="tipo">Tipo de Denúncia</label>
+            <select id="tipo">
+              <option value="">Selecione...</option>
+              <option value="assedio">Assédio</option>
+              <option value="bullying">Bullying</option>
+              <option value="infraestrutura">Infraestrutura</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
 
-                    <!-- Contato -->
-                    <div class="footer-section">
-                        <h3>Contato</h3>
-                        <p>📍 Rua Exemplo, 123 – Fortaleza/CE</p>
-                        <p>📞 (85) 99999-9999</p>
-                        <p>✉️ contato@eeep-leonel.com</p>
-                        <div class="socials">
-                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                                    alt="Facebook"></a>
-                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                                    alt="Instagram"></a>
-                        </div>
-                    </div>
-                </div>
+          <!-- Descrição -->
+          <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" rows="5"></textarea>
+          </div>
 
-                <div class="footer-bottom">
-                    <p>&copy; 2025 EEEP Leonel de Moura Brizola. Todos os direitos reservados.</p>
-                </div>
-            </footer>
-        </section>
-        <!-- Fim rodapé -->
+          <button type="submit" class="btn-enviar">Enviar Denúncia</button>
+        </form>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- ================= RODAPÉ ==================== -->
+      <!-- ============================================= -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>EEEP Leonel de Moura Brizola</h3>
+            <p>Formação técnica e desenvolvimento humano.</p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Links Úteis</h3>
+            <ul>
+              <li><a href="#cursos">Cursos</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <p>📍 Fortaleza/CE</p>
+            <p>📞 (85) 99999-9999</p>
+            <p>✉️ contato@eeep-leonel.com</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 EEEP Leonel de Moura Brizola</p>
+        </div>
+      </footer>
     </main>
-</body>
-
+  </body>
 </html>
